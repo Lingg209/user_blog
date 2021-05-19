@@ -2607,7 +2607,7 @@ ul.header-social li a {
   background-color: transparent;
   font-size: 14px;
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
