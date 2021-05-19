@@ -1,7 +1,8 @@
-body.ie .featuredContainer > div {
+body.ie .featuredContainer>div {
     width: 100%;
     box-sizing: border-box;
 }
+
 body.ie .d-inline-block {
     display: block!important;
 }
@@ -9,6 +10,7 @@ body.ie .d-inline-block {
 body.ie .ie-full-width {
     width: 100%;
 }
+
 body.ie .post-date-dark ul li span {
     float: inherit;
 }
