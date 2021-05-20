@@ -3036,7 +3036,7 @@ div#wrapper.open>.offcanvas-mask {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: #111;
+    background-color: rgb(255, 255, 255);
     z-index: -1;
     top: 0;
     left: 0;
