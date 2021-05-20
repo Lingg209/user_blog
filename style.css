@@ -106,6 +106,38 @@ p.size-lg {
     font-size: 17px;
 }
 
+.size-c22 {
+    font-size: 22px;
+}
+
+.size-c24 {
+    font-size: 24px;
+}
+
+.size-c26 {
+    font-size: 26px;
+}
+
+.size-c30 {
+    font-size: 30px;
+}
+
+.size-c34 {
+    font-size: 34px;
+}
+
+.size-c36 {
+    font-size: 36px;
+}
+
+.size-c40 {
+    font-size: 40px;
+}
+
+.size-c60 {
+    font-size: 60px;
+}
+
 h1.title-medium-dark {
     font-weight: 500;
     color: #111;
@@ -3004,7 +3036,7 @@ div#wrapper.open>.offcanvas-mask {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: #111;
+    background-color: rgb(255, 255, 255);
     z-index: -1;
     top: 0;
     left: 0;
