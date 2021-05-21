@@ -22,10 +22,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
     line-height: 1.4;
     font-family: Roboto, sans-serif;
     margin: 0 0 20px;
@@ -4751,7 +4748,7 @@ footer {
 }
 
 footer .footer-area-bottom {
-    padding: 60px 0 50px;
+    padding: 10px 0 0px;
 }
 
 footer .footer-area-bottom .footer-logo {
