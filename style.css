@@ -694,7 +694,7 @@ ul.item-inline li {
 /* ---preloader--- */
 
 #preloader {
-    background: url(img/preloader.gif) center center no-repeat #e53935;
+    background: url(img/preloader.gif) center center no-repeat grey;
     height: 100%;
     left: 0;
     overflow: visible;
@@ -1868,7 +1868,7 @@ ul.news-info-list li {
     font-size: 13px;
     margin-right: 30px;
     display: inline-block;
-    color: white;
+    color: black;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2974,7 +2974,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .mean-container .mean-bar .meanmenu-reveal span {
-    background: #fff;
+    background: black
 }
 
 .mean-container .mean-bar .mean-nav {
