@@ -22,10 +22,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
     line-height: 1.4;
     font-family: Roboto, sans-serif;
     margin: 0 0 20px;
@@ -3017,7 +3014,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .mean-container .mean-bar .mobile-menu-nav-back {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #ffffff;
     position: relative;
     text-align: center;
     height: 60px;
@@ -4751,7 +4748,7 @@ footer {
 }
 
 footer .footer-area-bottom {
-    padding: 60px 0 50px;
+    padding: 10px 0 0px;
 }
 
 footer .footer-area-bottom .footer-logo {
