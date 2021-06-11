@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -36,6 +37,7 @@
     <!-- Modernizr Js -->
     <script src="js/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
     <div id="preloader"></div>
     <div id="wrapper" class="wrapper">
@@ -54,25 +56,25 @@
                                         <li>
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                             <script language="" type="text/javascript">
+                                                // Array ofmonth Names
 
-                                            // Array ofmonth Names
+                                                var monthNames = new Array("một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười", "mười một", "mười hai");
 
-                                            var monthNames = new Array("một","hai","ba","bốn","năm","sáu","bảy","tám","chín","mười","mười một","mười hai"); 
+                                                var monthNames = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12");
 
-                                            var monthNames = new Array("1","2","3","4","5","6","7","8","9","10","11","12");
+                                                var dayNames = new Array("Chủ nhật,", "Thứ Hai,", "Thứ Ba,", "Thứ tư,", "Thứ Năm,", "Thứ Sáu,", "Thứ Bảy,")
 
-                                            var dayNames = new Array("Chủ nhật,","Thứ Hai,","Thứ Ba,","Thứ tư,","Thứ Năm,","Thứ Sáu,","Thứ Bảy,")
+                                                var now = new Date();
 
-                                            var now = new Date();
+                                                thisYear = now.getYear();
 
-                                            thisYear = now.getYear();
+                                                thisDay = dayNames[now.getDay()];
 
-                                            thisDay = dayNames[now.getDay()];
+                                                if (thisYear < 1900) {
+                                                    thisYear += 1900
+                                                }; // corrections if Y2K display problem
 
-                                            if(thisYear < 1900) {thisYear += 1900}; // corrections if Y2K display problem
-
-                                            document.write( thisDay +" "+"ngày"+" "+ now.getDate() + " tháng " + monthNames[now.getMonth()] + " năm " + thisYear);
-
+                                                document.write(thisDay + " " + "ngày" + " " + now.getDate() + " tháng " + monthNames[now.getMonth()] + " năm " + thisYear);
                                             </script>
                                         </li>
                                     </ul>
@@ -253,7 +255,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-8 col-lg-7 col-md-12 mb-30">
+                        <div class="scrollbar col-xl-8 col-lg-7 col-md-12 mb-30" id="scroll-style">
                             <div class="item-box-light-lg mb-30">
                                 <p><b>Thực đơn bữa sáng healthy </b>thôi chưa đủ. Với nhịp sống vội vã như ngày nay, các món ăn khởi đầu ngày mới cần đảm bảo yếu tố nhanh chóng và tiện lợi. Làm sao để vừa cung cấp nguồn năng lượng dồi dào giúp cơ thể cảm
                                     thấy khỏe khoắn và tỉnh táo cho cả ngày dài nhưng không mất quá nhiều thời gian nấu nướng.
@@ -364,7 +366,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row no-gutters divider blog-post-slider">
+                            <div class="row item-box-light-lg no-gutters divider">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <a href="single.html" class="prev-article">
                                         <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
@@ -377,143 +379,8 @@
                                     <h3 class="title-medium-dark pl-50"><b>22 mẹo vặt nhà bếp bạn cần biết</b></h3>
                                 </div>
                             </div>
-                            <div class="related-post item-box-light-lg mb-30">
-                                <div class="topic-border color-cod-gray mb-30 width-100">
-                                    <div class="topic-box-lg color-cod-gray">Bài viết liên quan</div>
-                                </div>
-                                <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3" data-margin="15" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1"
-                                    data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2" data-r-medium-nav="true"
-                                    data-r-medium-dots="false" data-r-Large="3" data-r-Large-nav="true" data-r-Large-dots="false">
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/new182.png" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html">Mẹo nấu cháo nhanh nhừ thơm ngon</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/news9.jpg" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html">Công thức nấu thịt kho hột vịt ăn hao cơm</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/news32.jpg" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html">Bữa sáng đơn giản với salad trộn</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/news.jpeg" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Sức khỏe</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html">6 lời khuyên hữu ích giúp cả gia đình tăng cường sức đề kháng phòng dịch covid-19 </a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/news9.jpg" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html">Công thức nấu thịt kho hột vịt ăn hao cơm</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <div class="img-scale-animate mb-20">
-                                            <img src="img/news/news33.jpg" alt="news" class="img-fluid width-100">
-                                            <div class="topic-box-top-xs">
-                                                <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-body">
-                                            <div class="post-date-dark">
-                                                <ul>
-                                                    <li>
-                                                        <span>
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            </span>12 tháng 5, 2021</li>
-                                                </ul>
-                                            </div>
-                                            <h3 class="title-medium-dark size-sm mb-none">
-                                                <a href="single.html"> 5 công thức làm nước giải nhiệt</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="ne-sidebar sidebar-break-md col-xl-4 col-lg-5 col-md-12">
+                        <div class="ne-sidebar scrollbar sidebar-break-md col-xl-4 col-lg-5 col-md-12" id="scroll-style">
                             <div class="sidebar-box">
                                 <div class="item-box-light-md">
                                     <div class="topic-border color-cod-gray mb-30">
@@ -598,7 +465,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="position-relative mb30-list">
                                                 <div class="media">
                                                     <a class="img-opacity-hover width50-md width50-mb" href="single-news-1.html">
@@ -714,7 +581,143 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="container item-box-light-lg mb-30">
+                            <div class="topic-border color-cod-gray mb-30 width-100">
+                                <div class="topic-box-lg color-cod-gray">Bài viết liên quan</div>
+                            </div>
+                            <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3" data-margin="15" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1"
+                                data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2" data-r-medium-nav="true"
+                                data-r-medium-dots="false" data-r-Large="3" data-r-Large-nav="true" data-r-Large-dots="false">
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/new182.png" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html">Mẹo nấu cháo nhanh nhừ thơm ngon</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/news9.jpg" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html">Công thức nấu thịt kho hột vịt ăn hao cơm</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/news32.jpg" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html">Bữa sáng đơn giản với salad trộn</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/news.jpeg" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">Sức khỏe</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html">6 lời khuyên hữu ích giúp cả gia đình tăng cường sức đề kháng phòng dịch covid-19 </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/news9.jpg" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html">Công thức nấu thịt kho hột vịt ăn hao cơm</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="img-scale-animate mb-20">
+                                        <img src="img/news/news33.jpg" alt="news" class="img-fluid width-100">
+                                        <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body">
+                                        <div class="post-date-dark">
+                                            <ul>
+                                                <li>
+                                                    <span>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                        </span>12 tháng 5, 2021</li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-medium-dark size-sm mb-none">
+                                            <a href="single.html"> 5 công thức làm nước giải nhiệt</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -818,4 +821,5 @@
     <script src="js/main.js" type="text/javascript"></script>
 </body>
 <!-- end of body -->
+
 </html>
