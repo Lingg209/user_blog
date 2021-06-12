@@ -22,6 +22,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* css for rating star */
+div.stars {}
+ 
+a.star {
+    font-size: 24px;
+    color: #f0f1f4;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.1s ease;
+}
+
+a.star.vote-hover {
+    color: #ff0000;
+}
+
+a.star:active {
+    color: #ff0000;
+}
+
+a.star.vote-active {
+    color: #ff0000;
+}
+
+.blue {
+    color: #ff0000;
+}
+
 h1,
 h2,
 h3,
