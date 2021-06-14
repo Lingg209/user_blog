@@ -63,6 +63,33 @@ a:hover {
     outline: 0;
 }
 
+/* css for rating star */
+div.stars {}
+ 
+a.star {
+    font-size: 24px;
+    color: #f0f1f4;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.1s ease;
+}
+
+a.star.vote-hover {
+    color: #e25757;
+}
+
+a.star:active {
+    color: #e25757;
+}
+
+a.star.vote-active {
+    color: #ff0000;
+}
+
+.blue {
+    color: #e25757;
+}
+/* end css rating star */
 img {
     max-width: 100%;
     height: auto;
