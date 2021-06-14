@@ -258,13 +258,13 @@
                                             <i class="fa fa-home"></i>
                                         </div>Trang Chủ
                                     </a>
-                                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <a class="nav-link" href="thongtintaikhoan.html">
                                         <div class="nav-link-icon">
                                             <i class="fa fa-user"></i>
                                         </div>Thông tin tài khoản
 
                                     </a>
-                                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <a class="nav-link" href="chinhsuathongtin.html">
                                         <div class="nav-link-icon">
                                             <i class="fa fa-edit"></i>
                                         </div>Chỉnh sửa thông tin
@@ -282,60 +282,72 @@
                         <div class="info-user-profile scrollbar-tt col-xl-9 col-lg-9 col-md-12 mb-30" id="scroll-style">
                             <h2 class="header-page">Thông tin tài khoản</h2>
                             <div class="wrap user-profile">
-                                <div class="box-user-image">
+                                <div class="col-md-3">
                                     <form id="frmProfile" method="post" enctype="multipart/form-data" style="text-align: center">
                                         <input type="file" name="image" id="attachFile" value style="display:none">
                                         <input type="hidden" name="image-src" id="src-hidden">
-                                        <img type="img-image" class="user-image" src="img/no_avatar.png">
-                                        <a href="" rel="nofollow" id="AddFileUpload" style="display: block; margin: 10px 0;">Đổi ảnh đại diện</a>
+                                        <a href="" rel="nofollow" id="AddFileUpload"><img type="img-image" class="user-image" src="img/no_avatar.png"></a>
                                     </form>
                                 </div>
-                                <div class="infor-user">
-                                    <p class="infoMainUser">
-                                        <strong class="mr10">Tên người dùng: </strong>
-                                        <span class="action hidden">tuyetanh</span>
-                                    </p>
-                                    <p class="infoMainUser">
-                                        <strong class="mr10">Email: </strong>
-                                        <span class="action hidden"></span>
-                                    </p>
-                                    <p class="infoMainUser">
-                                        <strong class="mr10">Giới tính: </strong>
-                                        <span class="action hidden">tuyetanh</span>
-                                    </p>
-                                    <p class="infoMainUser">
-                                        <strong class="mr10">Ngày sinh: </strong>
-                                        <span class="action hidden">tuyetanh</span>
-                                    </p>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <h3><label for="txtName">Họ tên</label></h3>
+                                        <input name="Name" type="text" class="form-control" id="txtName" placeholder="Nguyen Van A" />
+                                    </div>
+                                    <div class="form-group">
+                                        <h3><label for="txtEmail">Email</label></h3>
+                                        <input name="Email" type="text" class="form-control" id="txtEmail" placeholder="example@gmail.com" />
+                                    </div>
+                                    <div class="form-group">
+                                        <h3><label for="txtAddress">Địa chỉ</label></h3>
+                                        <input name="Address" type="text" class="form-control" id="txtAddress" placeholder="..." />
+                                    </div>
+                                    <div class="form-group">
+                                        <h3><label for="txtProvince">Tỉnh/Thành phố</label></h3>
+                                        <input name="Province" type="text" class="form-control" id="txtProvince" placeholder="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <h3><label for="txtGender">Giới tính</label></h3>
+                                        <input name="Gender" type="radio" class="form-control" id="txtGender" value="male" checked> Male
+                                        <input name="Gender" type="radio" class="form-control" id="txtGender" value="female"> Female
+                                        <input name="Gender" type="radio" class="form-control" id="txtGender" value="other"> Other
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="infoMainUser">
+                                            <b class="fl">Về bản thân</b>
+                                            <span class="action hidden">
+                                                    <a href="#" class="edit">Sửa</a>"|"
+                                                    <a>Ẩn</a>
+                                                </span>
+                                        </h3>
+                                        <textarea disabled="disabled" class="form-control">[Chưa cập nhật]</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="infoMainUser">
+                                            <b class="fl">Kinh nghiệm bếp núc</b>
+                                            <span class="action hidden">
+                                                    <a href="#" class="edit">Sửa</a>"|"
+                                                    <a>Ẩn</a>
+                                                </span>
+                                        </h3>
+                                        <textarea disabled="disabled" class="form-control">[Chưa cập nhật]</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="infoMainUser">
+                                            <b class="fl">Sở thích ẩm thực</b>
+                                            <span class="action hidden">
+                                                    <a href="#" class="edit">Sửa</a>"|"
+                                                    <a>Ẩn</a>
+                                                </span>
+                                        </h3>
+                                        <textarea disabled="disabled" class="form-control">[Chưa cập nhật]</textarea>
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-danger" type="submit">Cập nhật</button>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="wrap infor-profile">
-                                <div>
-                                    <h3 class="infoMainUser">
-                                        <b class="fl">Về bản thân</b>
-                                        <span class="action hidden">
-                                            <a href="#" class="edit">Sửa</a>"|"
-                                            <a>Ẩn</a>
-                                        </span>
-                                    </h3>
-                                    <textarea disabled="disabled" class="form-control">[Chưa cập nhật]</textarea>
-                                </div>
-                                <h3 class="inforMainUser">
-                                    <b class="fl">Kinh nghiệm bếp núc: </b>
-                                    <span class="action hidden">
-                                        <a href="" class="edit">Sửa</a>"|"
-                                        <a>Ẩn</a>
-                                    </span>
-                                </h3>
-                                <h3 class="inforMainUser">
-                                    <b class="fl">Sở thích ẩm thực: </b>
-                                    <span class="action hidden">
-                                        <a href="" class="edit">Sửa</a>"|"
-                                        <a>Ẩn</a>
-                                    </span>
-                                </h3>
-                            </div>
                         </div>
                     </div>
                 </div>
