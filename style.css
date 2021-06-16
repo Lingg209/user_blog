@@ -4789,6 +4789,13 @@ ul.blog-tags li:first-child {
     border-color: #d43f3a;
 }
 
+
+/* seemore */
+
+#btnSeeMore {
+    margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 767px) {
     .breadcrumbs-area .breadcrumbs-content h1 {
         font-size: 26px;
